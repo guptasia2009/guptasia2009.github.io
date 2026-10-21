@@ -1,1 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Sia Gupta's Personal Website</title>
+  <meta name="description" content="Portfolio">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="home">
 
+  <div class="socials">
+    <a class="em" href="#contact" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M2 4h20v16H2V4zm2 2v.5l8 5 8-5V6H4zm16 2.85-8 5-8-5V18h16V8.85z"/></svg></a>
+    <a href="https://github.com/guptasia2009" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a>
+    <a href="https://www.linkedin.com/in/sia-gupta/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+  </div>
+
+  <div class="container">
+    <header class="top">
+      <nav>
+        <a href="#home" class="on">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#awards">Awards</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <div>
+        <h1>Hey! I'm Sia.</h1>
+        <p>I'm a senior at <b>Tesla STEM High School</b> in Redmond, WA. I build <b>low-cost AI hardware and software</b> for people that existing technology leaves out, with hands-on experience in embedded systems, reinforcement learning, and app development.</p>
+        <p class="status">Coding Coach @ <b>CodeWiz</b></p>
+        <a class="btn" href="#contact">Contact me!</a>
+      </div>
+      <div class="hero-photo">
+        <span class="ring r1" aria-hidden="true"></span>
+        <img src="images/me.jpg" alt="Sia Gupta in front of the U.S. Capitol">
+        <svg class="dots" width="72" height="72" aria-hidden="true"><defs><pattern id="dp" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.5" fill="#b08d5b"/></pattern></defs><rect width="72" height="72" fill="url(#dp)"/></svg>
+      </div>
+    </div>
+
+    <section id="projects">
+      <div class="sec-title"><h2>Projects</h2><hr></div>
+      <div class="cards">
+
+        <div class="card">
+          <div class="img"><img src="images/eyear/thumb.jpg" alt="eyEar camera clip mounted on glasses"></div>
+          <div class="body">
+            <h3>eyEar: An AI Navigation Wearable for the Blind</h3>
+            <span class="award">MIT Solve Top 10 National Finalist</span>
+            <p>Built a $50 camera clip for glasses using a XIAO ESP32-S3 Sense, a Flutter app, and Gemini. One button press sends a photo over Bluetooth; the app matches it against Cortex, a 100+ scenario database co-designed with three blind users, and speaks back an action like "empty seat, 2 o'clock, 4 steps" in under two seconds.</p>
+            <a class="btn" href="projects/eyear.html">View Project</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img"><img src="images/bioreactor/thumb.jpg" alt="Cardboard bioreactor enclosure with dissolved oxygen probe and syringe pump"></div>
+          <div class="body">
+            <h3>Continual Reinforcement Learning for Algal Carbon Capture</h3>
+            <span class="award">WSSEF 1st Place Robotics, Top 20 of 1,100</span>
+            <p>Nine bioreactors, each controlled by a Raspberry Pi running a PPO agent pre-trained in a Monod + Haldane simulation. Every 30 minutes it reads dissolved oxygen and sets LED brightness and nutrient dosing, then retrains daily on its own jar's data. Grew 42.8% more biomass than a PID controller and 94.7% more than static control (p = 0.002).</p>
+            <a class="btn" href="projects/bioreactor.html">View Project</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="img"><img src="images/asl-connect/thumb.jpg" alt="ASL Connect app screenshot"></div>
+          <div class="body">
+            <h3>ASL Connect: Real-Time Sign Language Translation</h3>
+            <span class="award">Congressional App Challenge Winner</span>
+            <p>Co-developed an ML app with Python, HTML, and JavaScript that translates sign language gestures in real time, so ASL users can communicate with people who don't sign. Pitched to Congress and innovators at House of Code 2025.</p>
+            <a class="btn" href="https://www.congressionalappchallenge.us/24-WA08/" target="_blank" rel="noopener">Article</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="sec-title"><h2>Experience</h2><hr></div>
+      <ul class="list">
+        <li>
+          <div class="t">Coding Coach &amp; Curriculum Designer @ CodeWiz</div>
+          <div class="m">Kirkland, WA · Aug 2024 – Present</div>
+          <div class="d">Taught 12 courses to 50+ students, from Scratch to web and app development. Designed original capstone and AI chatbot curricula in Python, and help train new coaches.</div>
+        </li>
+        <li>
+          <div class="t">Research Intern, EEM Team Lead @ UW SEAL</div>
+          <div class="m">University of Washington Sensors, Energy &amp; Automation Laboratory · May 2026 – Present</div>
+          <div class="d">Leading a 5-person team applying ML to excitation-emission spectroscopy to detect pesticides on produce. Wrote research proposals and grant applications, including an NIH Commercialization Readiness Pilot with SpecTree.</div>
+        </li>
+        <li>
+          <div class="t">Founder &amp; President, AI Innovation Club</div>
+          <div class="m">Tesla STEM High School · Sep 2024 – Jun 2026</div>
+          <div class="d">Grew the club to 60+ members, ran districtwide AI workshops for middle schoolers, and launched a regional Microsoft Imagine Cup Jr. for 30+ students.</div>
+        </li>
+        <li>
+          <div class="t">Assistive Technology Builder @ Go Baby Go</div>
+          <div class="m">Feb 2026 – May 2026</div>
+          <div class="d">Adapted 3 ride-on cars for local students with cerebral palsy, customizing seating, drive controls, and mirrors alongside a physical therapist.</div>
+        </li>
+        <li>
+          <div class="t">Co-Author, Coral Restoration Research Proposal</div>
+          <div class="m">Curiex Academic Review, Issue 6, p. 176 · Dec 2025</div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="awards">
+      <div class="sec-title"><h2>Awards</h2><hr></div>
+      <ul class="list">
+        <li><div class="t"><a href="https://www.congressionalappchallenge.us/24-WA08/" target="_blank" rel="noopener">Winner</a>, Congressional App Challenge</div><div class="m">ASL Connect · Issued by Rep. Kim Schrier, WA-08 · 2024</div></li>
+        <li><div class="t"><a href="https://wssef.org/2026-wssef-first-place-trophy-grades-9-12/" target="_blank" rel="noopener">1st Place Robotics</a>, Top 20 Overall of 1,100, Washington State Science &amp; Engineering Fair</div><div class="m">Issued by WSSEF · 2026</div></li>
+        <li><div class="t">Top 10 National Finalist, MIT Solve: AI for a Better World</div><div class="m">eyEar · Issued by MIT Solve · 2026</div></li>
+        <li><div class="t">1st Place Biotechnology Design (State); 5th Place Children's Stories (Nationals), Technology Student Association</div><div class="m">Also 9th Biotechnology Design, 11th Future Technology Teacher at Nationals · Issued by TSA · 2025, 2026</div></li>
+        <li><div class="t">3rd Place Nationally, Jacobson Institute Innovator Competition</div><div class="m">eyEar, $500 seed funding · Issued by University of Iowa · 2026</div></li>
+        <li><div class="t">2nd Place Sustainable Energy, 3rd Place Optics (State); 1st Place Electric Vehicle (Regionals), Science Olympiad</div><div class="m">Nationals competitor · Issued by Science Olympiad · 2023 – 2026</div></li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <div class="sec-title"><h2>Skills</h2><hr></div>
+      <div class="skill-boxes">
+        <div class="skill-box"><h3>Programming</h3><ul><li>Python</li><li>Java</li><li>C</li><li>JavaScript</li><li>HTML/CSS</li><li>Dart (Flutter)</li></ul></div>
+        <div class="skill-box"><h3>AI / ML</h3><ul><li>Reinforcement Learning (PPO, Q-Learning)</li><li>Computer Vision</li><li>TensorFlow</li><li>OpenCV</li><li>MediaPipe</li><li>Google Gemini API</li></ul></div>
+        <div class="skill-box"><h3>Hardware</h3><ul><li>ESP32</li><li>Raspberry Pi</li><li>Arduino</li><li>Soldering</li><li>3D Printing</li><li>Bioreactor Design</li></ul></div>
+        <div class="skill-box"><h3>Research</h3><ul><li>Simulation Modeling</li><li>Statistical Testing</li><li>EEM Spectroscopy Analysis</li><li>Grant Writing</li></ul></div>
+        <div class="skill-box"><h3>Tools</h3><ul><li>Git</li><li>Supabase</li><li>Adobe Illustrator</li></ul></div>
+        <div class="skill-box"><h3>Languages</h3><ul><li>English</li><li>Hindi</li><li>Spanish</li></ul></div>
+      </div>
+
+      <div class="edu">
+        <div class="school">
+          <h3>Tesla STEM High School</h3>
+          <p>Redmond, WA · 4.0 GPA · 11 APs</p>
+        </div>
+        <div>
+          <h4>AP Courses</h4>
+          <ul class="ap">
+            <li><b>AP Computer Science A</b> (5)</li>
+            <li><b>AP Computer Science Principles</b> (5)</li>
+            <li><b>AP Calculus AB</b> (5)</li>
+            <li><b>AP Calculus BC</b> (5)</li>
+            <li><b>AP Statistics</b> (5)</li>
+            <li><b>AP Biology</b> (5)</li>
+            <li><b>AP Environmental Science</b> (5)</li>
+            <li><b>AP Language &amp; Composition</b> (5)</li>
+            <li><b>AP U.S. History</b> (4)</li>
+            <li><b>AP Physics C: Mechanics</b> (in progress)</li>
+            <li><b>AP Physics C: Electricity &amp; Magnetism</b> (in progress)</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Certifications</h4>
+          <ul class="plain">
+            <li><b>Architectural Studies 1</b> (University of Washington)</li>
+            <li><b>Artificial Intelligence A-Z</b> (Udemy): built 7 AI models, including PPO</li>
+            <li><b>The Art of Persuasive Writing and Public Speaking</b> (HarvardX)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="sec-title"><h2>Contact</h2><hr></div>
+      <div class="contact">
+        <p>I'm always open to collaborations, research opportunities, and new build ideas. Feel free to reach out!</p>
+        <div class="contact-box">
+          <h3>Message me here</h3>
+          <a class="em" href="#contact"><svg viewBox="0 0 24 24"><path d="M2 4h20v16H2V4zm2 2v.5l8 5 8-5V6H4zm16 2.85-8 5-8-5V18h16V8.85z"/></svg><span class="em-text">getsiagupta [at] outlook [dot] com</span></a>
+          <a href="https://www.linkedin.com/in/sia-gupta/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>linkedin.com/in/sia-gupta</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer><div class="container">© 2026 Sia Gupta</div></footer>
+
+  <script>
+    (function () {
+      var addr = ['getsiagupta', 'outlook.com'].join('@');
+      document.querySelectorAll('.em').forEach(function (a) { a.href = 'mailto:' + addr; });
+      document.querySelectorAll('.em-text').forEach(function (s) { s.textContent = addr; });
+    })();
+  </script>
+</body>
+</html>
